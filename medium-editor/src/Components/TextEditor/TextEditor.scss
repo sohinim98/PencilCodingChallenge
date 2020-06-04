@@ -14,11 +14,10 @@
   }
   .text-editor--viewport {
     background: var(--base--black);
-    display: flex;
-    flex-direction: column;
     max-width: 700px;
     margin: auto;
     min-height: 500px;
     padding: var(--spacer--sm);
+    text-align: left;
   }
 }
