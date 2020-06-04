@@ -32,6 +32,7 @@ const TextEditor = () => {
       <div className="text-editor">
         <img className="text-editor--logo" src={logo} alt="Medium Editor logo" />
         <h2 className="text-editor--header">Editor</h2>
+        <p>*Note - Highlight a section of text to add styles.</p>
         <Editor className="text-editor--viewport" text={content} onChange={handleChange} options={{ toolbar: { buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote'] } }}/>
       </div>
     );
