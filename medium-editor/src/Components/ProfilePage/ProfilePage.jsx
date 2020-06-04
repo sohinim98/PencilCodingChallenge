@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../providers/UserProvider';
+import ContentProvider from '../../providers/ContentProvider';
 import {auth} from '../../firebase';
+
+import TextEditor from '../TextEditor/TextEditor';
 
 const ProfilePage = () => {
   const user = useContext(UserContext);
@@ -19,6 +22,9 @@ const ProfilePage = () => {
         <div>
         <h2>{displayName}</h2>
         <h3>{email}</h3>
+        <ContentProvider>
+          <TextEditor />
+        </ContentProvider>
         </div>
       </div>
       <button onClick = {() => {auth.signOut()}}>Sign out</button>

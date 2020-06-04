@@ -1,5 +1,5 @@
-import React, { Component, createContext } from "react";
-import { auth, generateUserDocument } from "../firebase";
+import React, { Component, createContext } from 'react';
+import { auth, generateUserDocument } from '../firebase';
 
 // Note - using a class component to utilize props.children
 

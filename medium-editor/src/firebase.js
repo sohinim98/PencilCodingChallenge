@@ -46,16 +46,32 @@ export const generateUserDocument = async (user, additionalData) => {
   return getUserDocument(user.uid);
 };
 
-const getUserDocument = async uid => {
+export const getUserDocument = async uid => {
   if (!uid) return null;
   try {
     const userDocument = await firestore.doc(`users/${uid}`).get();
-
     return {
       uid,
       ...userDocument.data()
     };
   } catch (error) {
     console.error("Error fetching user", error);
+  }
+};
+
+export const saveContent  = async (user, content) => {
+  if (!user) return;
+
+  const dataRef = firestore.doc(`users/${user.uid}`);
+  const snapshot = await dataRef.get();
+
+  if (snapshot.exists) {
+    try {
+      await dataRef.set({
+        content: content,
+      });
+    } catch (error) {
+      console.error("Error creating content document", error);
+    }
   }
 };
