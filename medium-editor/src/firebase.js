@@ -4,13 +4,13 @@ import 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: 'fir-auth-article.firebaseapp.com',
-  databaseURL: 'https://fir-auth-article.firebaseio.com',
-  projectId: 'fir-auth-article',
-  storageBucket: 'fir-auth-article.appspot.com',
-  messagingSenderId: '774252759419',
-  appId: '1:774252759419:web:e014ddfa3553a4832a15de',
-  measurementId: 'G-77Z5WJ0SET'
+  authDomain: "medium-editor-c7333.firebaseapp.com",
+  databaseURL: "https://medium-editor-c7333.firebaseio.com",
+  projectId: "medium-editor-c7333",
+  storageBucket: "medium-editor-c7333.appspot.com",
+  messagingSenderId: "773473168883",
+  appId: "1:773473168883:web:7f32921de6a77425b6f686",
+  measurementId: "G-Z2V5XBCZSZ"
 };
 
 // Initialize Firebase
@@ -67,7 +67,7 @@ export const saveContent  = async (user, content) => {
 
   if (snapshot.exists) {
     try {
-      await dataRef.set({
+      await dataRef.update({
         content: content,
       });
     } catch (error) {

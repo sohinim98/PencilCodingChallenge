@@ -6,7 +6,7 @@ export const ContentContext = createContext(['', () => {}]);
 // export const SetContentContext = createContext(null);
 
 const ContentProvider = (props) => {
-  const [content, setContent] = useState('this is our default content');
+  const [content, setContent] = useState('Start typing here...');
   return (
       <ContentContext.Provider value={[content, setContent]}>
         {props.children}
