@@ -30,4 +30,5 @@ GitHub.
 
 * Modular code with components
 * Secrets stored in env file added to .gitignore
+* Responsive UX using a mobile-first approach
 * Accessible markup and clean styling using scss and BEM methodology

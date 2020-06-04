@@ -4,9 +4,6 @@
 .profile {
   background: var(--base--black);
   color: var(--base--white);
-  height: 100%;
-  position: fixed;
-  width: 20%;
 
   .profile--avatar {
     border-radius: 50%;
@@ -32,7 +29,18 @@
 
 .profile--editor {
   background: var(--base--grey--dark);
-  float: right;
-  min-height: 100vh;
-  width: 80%;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .profile {
+    height: 100%;
+    position: fixed;
+    width: 20%;
+  }
+  .profile--editor {
+    float: right;
+    min-height: 100vh;
+    width: 80%;
+  }
 }
