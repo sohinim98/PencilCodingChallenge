@@ -1,6 +1,6 @@
 # PencilCodingChallenge
 
-## Deployed at https://medium-editor-c7333.web.app
+### Deployed at https://medium-editor-c7333.web.app
 
 ## Specifications
 
@@ -30,4 +30,4 @@ GitHub.
 
 * Modular code with components
 * Secrets stored in env file added to .gitignore
-* Accessible UX with scss using BEM methodology
+* Accessible markup and clean styling using scss and BEM methodology
