@@ -32,3 +32,15 @@ GitHub.
 * Secrets stored in env file added to .gitignore
 * Responsive UX using a mobile-first approach
 * Accessible markup and clean styling using scss and BEM methodology
+
+## To clone repo, develop, build and deploy locally
+
+* git clone <ssh key/http url>
+* npm install
+* add API key to `.env` directly inside the `medium-editor` directory
+* npm start
+
+### When ready to deploy
+
+* npm run build
+* firebase deploy
