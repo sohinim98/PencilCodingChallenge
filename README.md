@@ -35,12 +35,12 @@ GitHub.
 
 ## To clone repo, develop, build and deploy locally
 
-* git clone <ssh key/http url>
-* npm install
-* add API key to `.env` directly inside the `medium-editor` directory
-* npm start
+* git clone `<ssh key/http url>`
+* `npm install`
+* add `API key` to `.env` directly inside the `medium-editor` directory
+* `npm start`
 
 ### When ready to deploy
 
-* npm run build
-* firebase deploy
+* `npm run build`
+* `firebase deploy`
